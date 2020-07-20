@@ -6,3 +6,5 @@ set_prop(priv_app, theme_prop)
 get_prop(priv_app, spectrum_prop)
 set_prop(priv_app, spectrum_prop)
 
+# Dc Dimming
+allow priv_app sysfs_dc_dim:file rw_file_perms;
