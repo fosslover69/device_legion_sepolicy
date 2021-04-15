@@ -28,3 +28,6 @@ allow platform_app recovery_service:service_manager find;
 allow platform_app { cache_file cache_recovery_file }:dir create_dir_perms;
 allow platform_app { cache_file cache_recovery_file }:file create_file_perms;
 allow platform_app cache_file:lnk_file r_file_perms;
+
+# Screenshot sound
+get_prop(platform_app, exported_audio_prop)
