@@ -32,7 +32,7 @@ binder_call(stats_service_server, flipendo)
 binder_call(flipendo, stats_service_server)
 
 # Allow flipendo to find hal_power_service
-allow flipendo hal_power_service:service_manager find;
+hal_client_domain(flipendo, hal_power);
 
 # Allow flipendo to find color_display_service
 allow flipendo color_display_service:service_manager find;
